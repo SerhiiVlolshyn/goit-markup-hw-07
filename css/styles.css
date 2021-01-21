@@ -316,6 +316,36 @@ footer address {
   background-color: var(--pointer);
 }
 
+.footer-subscription {
+  margin-left: 93px;
+}
+
+.subscription-form-text {
+  display: block;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+
+  margin-bottom: 20px;
+}
+
+.footer-subscription input {
+  width: 358px;
+  padding: 15px 16px;
+  background-color: var(--important-background-color);
+
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-subscription input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 /* Конец подвала */
 
 .container {
