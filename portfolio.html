@@ -53,12 +53,35 @@
         <div class="containar"> 
         <h1 class="main-title hidden">Портфолио</h1>
     <ul class="filtres list">
-        <li><button class="current-button" name="works-filter" type="button">Все</button></li>
-        <li><button name="works-filter" type="button">Веб-сайты</button></li>
-        <li><button name="works-filter" type="button">Приложения</button></li>
-        <li><button name="works-filter" type="button">Дизайн</button></li>
-        <li><button name="works-filter" type="button">Маркетинг</button></li>
+        <li><button class="choosen-one" name="works-filter" type="radio" value="all" checked>Все</button></li>
+        <li><button name="works-filter" type="radio" value="web" >Веб-сайты</button></li>
+        <li><button name="works-filter" type="radio" value="app" >Приложения</button></li>
+        <li><button name="works-filter" type="radio" value="des" >Дизайн</button></li>
+        <li><button name="works-filter" type="radio" value="mct" >Маркетинг</button></li>
     </ul>
+    <form class="filters list">
+        <label>
+            <input type="radio" name="works-filter" value="all" checked />
+            <span class="works-filter">Все</span>
+        </label>
+        <label>
+            <input type="radio" name="works-filter" value="web" />
+            <span class="works-filter">Веб-сайты</span>
+        </label>
+        <label>
+            <input type="radio" name="works-filter" value="app" />
+            <span class="works-filter">Приложения</span>
+        </label>
+        <label>
+            <input type="radio" name="works-filter" value="des" />
+            <span class="works-filter">Дизайн</span>
+        </label>
+        <label>
+            <input type="radio" name="works-filter" value="mct" />
+            <span class="works-filter">Маркетинг</span>
+        </label>
+
+    </form>
         </div>
 
     <div class="container portfolio-innerheit">

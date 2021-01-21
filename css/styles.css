@@ -461,13 +461,41 @@ button[name='works-filter'] {
   cursor: pointer;
 }
 
-.current-button {
+.choosen-one {
   background-color: var(--pointer);
   color: var(--white-color);
 }
 
 button[name='works-filter']:hover,
 button[name='works-filter']:focus {
+  background-color: var(--pointer);
+  color: var(--white-color);
+  border-radius: 4px;
+  border: 0 solid #ffffff;
+  padding: 6px 22px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+input[name='works-filter'] {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: var(--common-font-size);
+  line-height: 1.62;
+  text-align: center;
+  border-radius: 4px;
+  border: 0;
+  padding: 6px 22px;
+  cursor: pointer;
+}
+
+input[name='works-filter']:checked {
+  background-color: var(--pointer);
+  color: var(--white-color);
+}
+
+input[name='works-filter']:hover,
+input[name='works-filter']:focus {
   background-color: var(--pointer);
   color: var(--white-color);
   border-radius: 4px;
