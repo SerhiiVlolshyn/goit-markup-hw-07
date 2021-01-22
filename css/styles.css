@@ -370,6 +370,8 @@ button[name='subscription'] {
   border: 0;
 
   cursor: pointer;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .footer-send-icon {
@@ -881,6 +883,10 @@ button.inactive {
   margin-top: 12px;
 }
 
+.comment-for-callback {
+  margin-top: 10px;
+}
+
 .name-for-callback label,
 .tel-for-callback label,
 .email-for-callback label {
@@ -927,12 +933,12 @@ button.inactive {
   color: var(--pointer);
 }
 
-.name-for-callback:hover .modal-person,
-.name-for-callback:focus .modal-person,
-.tel-for-callback:hover .modal-tel,
-.tel-for-callback:focus .modal-tel,
-.email-for-callback:hover .modal-mail,
-.email-for-callback:focus .modal-mail {
+.name-for-callback input:hover + .modal-person,
+.name-for-callback input:focus + .modal-person,
+.tel-for-callback input:hover + .modal-tel,
+.tel-for-callback input:focus + .modal-tel,
+.email-for-callback input:hover + .modal-mail,
+.email-for-callback input:focus + .modal-mail {
   color: var(--pointer);
 }
 
@@ -947,6 +953,7 @@ button.inactive {
 }
 
 .modal textarea {
+  margin-top: 4px;
   transition: border var(--standard-reaction-time) var(--standard-cubic-bezier);
 }
 
