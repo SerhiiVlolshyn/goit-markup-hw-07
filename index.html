@@ -351,6 +351,54 @@
                     <use href="./images/symbol-defs.svg#icon-close-button"></use>
                 </svg>
             </button>
+
+            <section>
+                <h2 class="modal-header">Оставьте свои данные, мы вам перезвоним</h2>
+                <form name="name-for-callback">
+                    <label>
+                    <h3 class="first-modal-header">Имя</h3>
+                    <input type="text" name="name">
+                    <svg class="modal-person">
+                        <use href="./images/symbol-defs.svg#icon-chuvak"></use>
+                    </svg>
+                    </label>
+                </form>
+                <form name="tel-for-callback">
+                    <label>
+                    <h3>Телефон</h3>
+                    <input type="tel" name="tel">
+                    <svg class="modal-tel">
+                        <use href="./images/symbol-defs.svg#icon-tel"></use>
+                    </svg>
+                    </label>
+                </form>
+                <form name="email-for-callback">
+                    <label>
+                    <h3>Почта</h3>
+                    <input type="text" name="email">
+                    <svg class="modal-mail">
+                        <use href="./images/symbol-defs.svg#icon-mail"></use>
+                    </svg>
+                    </label>
+                </form>
+                <form name="comment-for-callback">
+                    <label>
+                    <h3 class="header-for-comment">Комментарий</h3>
+                     <textarea name="comment" id="" rows="10" placeholder="Введите текст"></textarea>
+                    </label>
+                </form>
+                <form class="acceptence">
+                    <label class="terms-of-use-checkbox">
+                        <input class="checkbox-hide terms-checkbox" type="checkbox" required>
+                        <span class="checkbox-visual"></span>
+                        <span class="terms-of-use">Соглашаюсь с рассылкой и принимаю <a href="./">Условия договора</a></span>
+                    </label>                   
+                </form>
+
+                <button class="modal-submit-btn" type="submit">Отправить</button>
+
+            </section>
+
         </div>
 
     </div>

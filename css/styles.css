@@ -378,6 +378,7 @@ button[name='subscription'] {
   top: 13px;
   width: 24px;
   height: 24px;
+  fill: var(--white-color);
 }
 
 /* Конец подвала */
@@ -449,34 +450,6 @@ button[type='button'] {
       var(--standard-cubic-bezier),
     color var(--standard-reaction-time) var(--standard-cubic-bezier),
     box-shadow var(--standard-reaction-time) var(--standard-cubic-bezier);
-}
-
-button[name='works-filter'] {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: var(--common-font-size);
-  line-height: 1.62;
-  text-align: center;
-  border-radius: 4px;
-  border: 0;
-  padding: 6px 22px;
-  cursor: pointer;
-}
-
-.current-button {
-  background-color: var(--pointer);
-  color: var(--white-color);
-}
-
-button[name='works-filter']:hover,
-button[name='works-filter']:focus {
-  background-color: var(--pointer);
-  color: var(--white-color);
-  border-radius: 4px;
-  border: 0 solid #ffffff;
-  padding: 6px 22px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button.primary {
@@ -832,6 +805,8 @@ button.inactive {
   width: 528px;
   height: 581px;
 
+  padding: 40px;
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -856,11 +831,209 @@ button.inactive {
   background-color: var(--white-color);
 
   cursor: pointer;
+
+  fill: currentColor;
+  transition: color var(--standard-reaction-time) var(--standard-cubic-bezier);
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+  color: var(--pointer);
 }
 
 .modal-close-button-cros {
   width: 11px;
   height: 11px;
+
+  position: relative;
+  top: 1px;
+}
+
+.modal-header {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--header-link-color);
+}
+
+.modal .first-modal-header {
+  margin-top: 12px;
+}
+
+.modal h3 {
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--regular-text-color);
+}
+
+.name-for-callback,
+.tel-for-callback,
+.email-for-callback {
+  position: relative;
+
+  fill: currentColor;
+}
+
+.modal-person {
+  position: absolute;
+  left: 56px;
+  top: 107px;
+
+  width: 12px;
+  height: 12px;
+
+  fill: currentColor;
+}
+
+.modal-tel {
+  position: absolute;
+  left: 56px;
+  top: 174.26px;
+
+  width: 13px;
+  height: 13px;
+
+  fill: currentColor;
+}
+
+.modal-mail {
+  position: absolute;
+  left: 56px;
+  top: 243px;
+
+  width: 15px;
+  height: 12px;
+
+  fill: currentColor;
+}
+
+.email-for-callback:hover,
+.email-for-callback:focus {
+  color: var(--pointer);
+}
+
+.modal input {
+  padding: 11px 42px;
+  width: 448px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-top: 4px;
+  border-radius: 4px;
+
+  transition: border var(--standard-reaction-time) var(--standard-cubic-bezier);
+}
+
+.modal input:hover,
+.modal input:focus,
+.modal textarea:focus,
+.modal textarea:hover {
+  border: 1px solid var(--pointer);
+}
+
+.header-for-comment {
+  margin-bottom: 4px;
+}
+
+.modal textarea {
+  width: 448px;
+  height: 120px;
+  padding: 11px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  resize: none;
+}
+
+.modal textarea::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.acceptence {
+  position: relative;
+}
+
+.terms-of-use-checkbox {
+  position: relative;
+  cursor: pointer;
+}
+
+.terms-of-use {
+  position: absolute;
+  top: 19px;
+  margin-left: 36px;
+  width: 400.18px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--regular-text-color);
+}
+
+.modal a,
+.modal a:visited {
+  color: var(--pointer);
+}
+
+.checkbox-visual {
+  position: absolute;
+  top: 25px;
+  left: 13px;
+  width: 12px;
+  height: 12px;
+  box-shadow: 0 0 0 0.13em var(--main-text-color);
+  border-radius: 0.2px;
+  background-color: var(--white-color);
+
+  transition: background-color var(--standard-reaction-time)
+      var(--standard-cubic-bezier),
+    box-shadow var(--standard-reaction-time) var(--standard-cubic-bezier);
+}
+
+.terms-checkbox:checked + .checkbox-visual {
+  background-color: var(--main-text-color);
+  background-image: url(../images/check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.terms-checkbox:focus + .checkbox-visual,
+.terms-of-use-checkbox:hover .checkbox-visual {
+  background-color: var(--white-color);
+  box-shadow: 0 0 0 0.13em var(--pointer);
+}
+
+.terms-checkbox:checked:focus + .checkbox-visual,
+.terms-of-use-checkbox:hover .terms-checkbox:checked + .checkbox-visual {
+  background-color: var(--pointer);
+  box-shadow: 0 0 0 0.13em var(--pointer);
+  background-image: url(../images/check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.modal-submit-btn {
+  display: inline-block;
+  padding: 10px 55.5px;
+  background: var(--pointer);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  cursor: pointer;
 }
 
 /* Элементы портфолио */
@@ -925,6 +1098,8 @@ button.inactive {
 .checkbox-portfolio:checked + .works-filter {
   background-color: var(--pointer);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .works-filter:hover,
