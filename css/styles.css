@@ -861,7 +861,7 @@ button.inactive {
   margin-top: 12px;
 }
 
-.modal h3 {
+.modal .header-label {
   margin-top: 10px;
   font-weight: normal;
   font-size: 12px;
@@ -874,6 +874,11 @@ button.inactive {
 .tel-for-callback,
 .email-for-callback {
   position: relative;
+  margin-top: 10px;
+}
+
+.name-for-callback {
+  margin-top: 12px;
 }
 
 .name-for-callback label,
@@ -886,35 +891,46 @@ button.inactive {
 
 .modal-person {
   position: absolute;
-  left: 56px;
-  top: 107px;
+  left: 15px;
+  top: 34px;
 
   width: 12px;
   height: 12px;
+
+  transition: color var(--standard-reaction-time) var(--standard-cubic-bezier);
 }
 
 .modal-tel {
   position: absolute;
-  left: 56px;
-  top: 174.26px;
+  left: 15px;
+  top: 34px;
 
   width: 13px;
   height: 13px;
+
+  transition: color var(--standard-reaction-time) var(--standard-cubic-bezier);
 }
 
 .modal-mail {
   position: absolute;
-  left: 56px;
-  top: 243px;
+  left: 15px;
+  top: 34px;
 
   width: 15px;
   height: 12px;
+
+  transition: color var(--standard-reaction-time) var(--standard-cubic-bezier);
 }
 
+.modal-person:hover,
 .modal-mail:hover {
   color: var(--pointer);
 }
 
+.name-for-callback:hover .modal-person,
+.name-for-callback:focus .modal-person,
+.tel-for-callback:hover .modal-tel,
+.tel-for-callback:focus .modal-tel,
 .email-for-callback:hover .modal-mail,
 .email-for-callback:focus .modal-mail {
   color: var(--pointer);
