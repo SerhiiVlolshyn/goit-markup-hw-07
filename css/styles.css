@@ -368,6 +368,8 @@ button[name='subscription'] {
 
   background-color: var(--pointer);
   border: 0;
+
+  cursor: pointer;
 }
 
 .footer-send-icon {
