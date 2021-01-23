@@ -887,9 +887,7 @@ button.inactive {
   margin-top: 10px;
 }
 
-.name-for-callback label,
-.tel-for-callback label,
-.email-for-callback label {
+.modal-container label {
   fill: var(--header-link-color);
 
   fill: currentColor;
@@ -903,6 +901,8 @@ button.inactive {
   width: 12px;
   height: 12px;
 
+  cursor: pointer;
+
   transition: color var(--standard-reaction-time) var(--standard-cubic-bezier);
 }
 
@@ -914,6 +914,8 @@ button.inactive {
   width: 13px;
   height: 13px;
 
+  cursor: pointer;
+
   transition: color var(--standard-reaction-time) var(--standard-cubic-bezier);
 }
 
@@ -924,6 +926,8 @@ button.inactive {
 
   width: 15px;
   height: 12px;
+
+  cursor: pointer;
 
   transition: color var(--standard-reaction-time) var(--standard-cubic-bezier);
 }
