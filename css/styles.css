@@ -1013,7 +1013,8 @@ button.inactive {
   color: var(--pointer);
 }
 
-.checkbox-visual {
+.checkbox-visual::before {
+  content: '';
   position: absolute;
   top: 25px;
   left: 13px;
@@ -1028,21 +1029,23 @@ button.inactive {
     box-shadow var(--standard-reaction-time) var(--standard-cubic-bezier);
 }
 
-.terms-checkbox:checked + .checkbox-visual {
+.terms-checkbox:checked + .checkbox-visual::before {
   background-color: var(--main-text-color);
   background-image: url(../images/check.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.terms-checkbox:focus + .checkbox-visual,
-.terms-of-use-checkbox:hover .checkbox-visual {
+.terms-checkbox:focus + .checkbox-visual::before,
+.terms-of-use-checkbox:hover .checkbox-visual::before {
   background-color: var(--white-color);
   box-shadow: 0 0 0 0.13em var(--pointer);
 }
 
-.terms-checkbox:checked:focus + .checkbox-visual,
-.terms-of-use-checkbox:hover .terms-checkbox:checked + .checkbox-visual {
+.terms-checkbox:checked:focus + .checkbox-visual::before,
+.terms-of-use-checkbox:hover
+  .terms-checkbox:checked
+  + .checkbox-visual::before {
   background-color: var(--pointer);
   box-shadow: 0 0 0 0.13em var(--pointer);
   background-image: url(../images/check.svg);
