@@ -888,11 +888,8 @@ button.inactive {
 
 .modal-container {
   position: relative;
-}
 
-.modal-container {
   fill: var(--header-link-color);
-
   fill: currentColor;
 }
 
