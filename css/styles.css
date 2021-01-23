@@ -334,7 +334,6 @@ footer address {
 }
 
 .footer-subscription input {
-  position: relative;
   top: -2px;
   width: 358px;
   padding: 16px 16px;
@@ -885,6 +884,10 @@ button.inactive {
 
 .comment-for-callback {
   margin-top: 10px;
+}
+
+.modal-container {
+  position: relative;
 }
 
 .modal-container label {
