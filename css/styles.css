@@ -933,25 +933,7 @@ button.inactive {
   transition: color var(--standard-reaction-time) var(--standard-cubic-bezier);
 }
 
-.modal-container:hover .modal-person {
-  color: var(--pointer);
-}
-
-.name-for-callback input:hover + .modal-person,
-.name-for-callback input:focus + .modal-person,
-.tel-for-callback input:hover + .modal-tel,
-.tel-for-callback input:focus + .modal-tel,
-.email-for-callback input:hover + .modal-mail,
-.email-for-callback input:focus + .modal-mail {
-  color: var(--pointer);
-}
-
-.modal-person:hover,
-.modal-person:focus,
-.modal-tel:hover,
-.modal-tel:focus,
-.modal-mail:hover,
-.modal-mail:focus {
+.modal-container:focus-within {
   color: var(--pointer);
 }
 
