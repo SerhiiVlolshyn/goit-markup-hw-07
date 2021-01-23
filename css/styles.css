@@ -219,7 +219,6 @@ header .logo {
 footer {
   background-color: var(--important-background-color);
   padding: 60px 0;
-  min-width: var(--site-width);
 }
 
 footer .container {
@@ -579,22 +578,24 @@ button.inactive {
   margin-left: 0;
 }
 
-.worklist-underscription {
+.worklist-underscription-div {
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
 
+  padding: 27px 0;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.worklist-underscription {
   font-weight: bold;
   font-size: 14px;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
-
-  padding: 27px 0;
-
-  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .team {
