@@ -1070,7 +1070,7 @@ button.inactive {
   position: absolute;
   bottom: 40px;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translateX(-50%);
   cursor: pointer;
 }
 
