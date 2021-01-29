@@ -864,7 +864,9 @@ button.inactive {
 }
 
 .modal .header-label {
-  margin-top: 10px;
+  position: absolute;
+  bottom: 44px;
+
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
@@ -872,32 +874,47 @@ button.inactive {
   color: var(--regular-text-color);
 }
 
-.name-for-callback,
-.tel-for-callback,
-.email-for-callback {
-  position: relative;
-  margin-top: 10px;
-}
-
 .name-for-callback {
-  margin-top: 12px;
+  margin-top: 30px;
 }
 
 .comment-for-callback {
-  margin-top: 10px;
+  margin-top: 28px;
 }
 
 .modal-container {
   position: relative;
 
+  width: 448px;
+  height: 40px;
+
   fill: var(--header-link-color);
   fill: currentColor;
+}
+
+.modal-container-comment {
+  position: relative;
+
+  width: 448px;
+  height: 120px;
+
+  fill: var(--header-link-color);
+  fill: currentColor;
+}
+
+.name-for-callback + .tel-for-callback {
+  margin-top: 28px;
+}
+
+.tel-for-callback + .email-for-callback {
+  margin-top: 28px;
 }
 
 .modal-person {
   position: absolute;
   left: 15px;
-  top: 34px;
+  top: 50%;
+  transform: translateY(-50%);
 
   width: 12px;
   height: 12px;
@@ -910,7 +927,8 @@ button.inactive {
 .modal-tel {
   position: absolute;
   left: 15px;
-  top: 34px;
+  top: 50%;
+  transform: translateY(-50%);
 
   width: 13px;
   height: 13px;
@@ -923,7 +941,8 @@ button.inactive {
 .modal-mail {
   position: absolute;
   left: 15px;
-  top: 34px;
+  top: 50%;
+  transform: translateY(-50%);
 
   width: 15px;
   height: 12px;
@@ -941,14 +960,12 @@ button.inactive {
   padding: 11px 42px;
   width: 448px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  margin-top: 4px;
   border-radius: 4px;
 
   transition: border var(--standard-reaction-time) var(--standard-cubic-bezier);
 }
 
 .modal textarea {
-  margin-top: 4px;
   transition: border var(--standard-reaction-time) var(--standard-cubic-bezier);
 }
 
@@ -960,7 +977,8 @@ button.inactive {
 }
 
 .header-for-comment {
-  margin-bottom: 4px;
+  position: absolute;
+  top: -18px;
 }
 
 .modal textarea {
