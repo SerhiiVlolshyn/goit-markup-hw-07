@@ -1079,7 +1079,7 @@ nav .current-page::after {
   cursor: pointer;
 }
 
-.filtres {
+.filters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1092,15 +1092,15 @@ nav .current-page::after {
   margin-left: -8px;
 }
 
-.filtres li {
+.filters li {
   margin-left: 8px;
 }
 
-.filtres li:first-child {
+.filters li:first-child {
   margin-left: 0;
 }
 
-.filtres li + li {
+.filters li + li {
   margin-left: 8px;
 }
 
