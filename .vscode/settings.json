@@ -1,0 +1,23 @@
+{
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.iconTheme": "vs-minimal",
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "window.zoomLevel": 0,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/css"
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/css"
+        }
+    ]
+}
