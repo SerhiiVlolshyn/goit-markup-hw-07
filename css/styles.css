@@ -1119,7 +1119,7 @@ button.inactive {
   justify-content: center;
 }
 
-.filters label + label {
+.filters li + li {
   margin-left: 8px;
 }
 

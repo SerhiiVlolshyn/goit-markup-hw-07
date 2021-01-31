@@ -366,60 +366,44 @@
                 </svg>
             </button>
 
-            <section>
+            <form class="form" autocomplete="off">
                 <h2 class="modal-header">Оставьте свои данные, мы вам перезвоним</h2>
-                <form class="name-for-callback">
-                        <div class="modal-container">
-                        <label>
-                            <span class="header-label first-modal-header">Имя</span>
+                <div class="name-for-callback modal-container">
+                            <label class="header-label first-modal-header">Имя</label>
                             <input type="text" name="name">
-                        </label>
                         <svg class="modal-person">
                             <use href="./images/symbol-defs.svg#icon-chuvak"></use>
                         </svg>
-                        </div>
-                </form>
-                <form class="tel-for-callback">
-                    <div class="modal-container">
-                        <label>
-                            <span class="header-label">Телефон</span>
+                </div>
+                <div class="tel-for-callback modal-container">
+                            <label class="header-label">Телефон</label>
                             <input type="tel" name="tel">
-                        </label>
                         <svg class="modal-tel">
                             <use href="./images/symbol-defs.svg#icon-tel"></use>
                         </svg>
-                    </div>
-                </form>
-                <form class="email-for-callback">
-                    <div class="modal-container">
-                        <label>
-                            <span class="header-label">Почта</span>
+                </div>
+                <div class="email-for-callback modal-container">
+                            <label class="header-label">Почта</label>
                             <input type="text" name="email">
-                        </label>
                         <svg class="modal-mail">
                             <use href="./images/symbol-defs.svg#icon-mail"></use>
                         </svg>
-                    </div>
-                </form>
-                <form class="comment-for-callback">
-                    <div class="modal-container-comment">
-                    <label>
-                    <span class="header-label header-for-comment">Комментарий</span>
+                </div>
+                <div class="comment-for-callback modal-container-comment">
+                    <label class="header-label header-for-comment">Комментарий</label>
                      <textarea name="comment" id="index-comment-modal-text-window" rows="10" placeholder="Введите текст"></textarea>
-                    </label>
-                    </div>
-                </form>
-                <form class="acceptence">
+                </div>
+                <div class="acceptence">
                     <label class="terms-of-use-checkbox">
                         <input class="checkbox-hide terms-checkbox" name="terms-of-use" type="checkbox" required>
                         <span class="checkbox-visual"></span>
                         <span class="terms-of-use">Соглашаюсь с рассылкой и принимаю <a href="./">Условия договора</a></span>
                     </label>                   
-                </form>
+                </div>
 
                 <button class="modal-submit-btn" type="submit">Отправить</button>
 
-            </section>
+            </form>
 
         </div>
 
