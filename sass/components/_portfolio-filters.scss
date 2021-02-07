@@ -34,7 +34,7 @@
 .works-filter {
   font-family: inherit;
   font-weight: 500;
-  font-size: var(--common-font-size);
+  font-size: $common-font-size;
   line-height: 1.62;
   text-align: center;
 
@@ -42,17 +42,16 @@
   border: 0;
   padding: 6px 22px;
   cursor: pointer;
-  background-color: var(--odd-section-background-color);
+  background-color: $odd-section-background-color;
 
-  transition: background-color var(--standard-reaction-time)
-      var(--standard-cubic-bezier),
-    color var(--standard-reaction-time) var(--standard-cubic-bezier),
-    box-shadow var(--standard-reaction-time) var(--standard-cubic-bezier);
+  transition: background-color $standard-reaction-time $standard-cubic-bezier,
+    color $standard-reaction-time $standard-cubic-bezier,
+    box-shadow $standard-reaction-time $standard-cubic-bezier;
 
   &:hover,
   &:focus {
-    background-color: var(--pointer);
-    color: var(--white-color);
+    background-color: $pointer;
+    color: $white-color;
     border-radius: 4px;
     border: 0 solid #ffffff;
     padding: 6px 22px;
@@ -60,8 +59,8 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
   &.checked {
-    background-color: var(--pointer);
-    color: var(--white-color);
+    background-color: $pointer;
+    color: $white-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
