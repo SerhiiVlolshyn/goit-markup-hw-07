@@ -251,7 +251,7 @@ footer a {
 }
 
 .footer-social {
-  margin-left: 74px;
+  margin-left: 84px;
 }
 
 .footer-social-header {
@@ -606,26 +606,30 @@ button.inactive {
 }
 
 .team-list {
-  margin-top: var(--common-margin-top);
-}
-
-.team .list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+
+  margin-top: calc(var(--common-margin-top) - 5px);
+  margin-left: calc(-1 * var(--standard-margin));
 }
 
-.team-list > li {
-  margin-left: var(--standard-margin);
+.team-member {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
+
   background-color: #ffffff;
   width: var(--standard-width);
-}
 
-.team li:first-child {
-  margin-left: 0;
+  margin-top: 5px;
+  margin-left: var(--standard-margin);
+
+  flex-basis: calc(100% / 4 - var(--standard-margin));
 }
 
 .team img {
-  width: var(--standard-width);
+  max-width: 100%;
 }
 
 .team .team-container {
@@ -645,22 +649,14 @@ button.inactive {
   color: var(--regular-text-color);
 }
 
-.advantages-list,
-.team-list {
+.advantages-list {
   margin-left: auto;
   margin-right: auto;
 }
 
-.advantages-list-item,
-.team-member {
+.advantages-list-item {
   display: inline-block;
   width: var(--standard-width);
-}
-
-.team-member {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 4px 4px;
 }
 
 .team-social-container {
@@ -706,13 +702,13 @@ button.inactive {
 
 /* Клиенты */
 
-.our-clients .section-title {
-  margin-top: var(--vertical-distance);
+.our-clients {
+  padding-top: var(--vertical-distance);
+  padding-bottom: var(--vertical-distance);
 }
 
 .client-list {
   margin-top: var(--common-margin-top);
-  margin-bottom: var(--vertical-distance);
 
   display: flex;
 }
@@ -1085,39 +1081,28 @@ button.inactive {
 
 /* Элементы портфолио */
 
-.portfolio-main {
+.portfolio-section {
   padding-bottom: var(--vertical-distance);
-}
-
-.filtres {
-  display: flex;
-  justify-content: center;
-  flex-basis: calc(100% / 5 - 10px);
-  margin-top: var(--vertical-distance);
-  margin-left: -8px;
-}
-
-.filtres li {
-  margin-left: 8px;
-}
-
-.filtres li:first-child {
-  margin-left: 0;
 }
 
 .checkbox-hide {
   position: absolute;
-  widows: 1px;
+  width: 1px;
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
 }
 
 .filters {
-  margin-top: var(--vertical-distance);
   display: flex;
   justify-content: center;
+  margin-top: var(--vertical-distance);
+  margin-left: -8px;
 }
+
+/* .filters li {
+  flex-basis: calc(100% / 5 - 10px);
+} */
 
 .filters li + li {
   margin-left: 8px;
@@ -1132,7 +1117,7 @@ button.inactive {
 
   border-radius: 4px;
   border: 0;
-  padding: 10.5px 22px;
+  padding: 6px 22px;
   cursor: pointer;
   background-color: var(--odd-section-background-color);
 
@@ -1142,7 +1127,14 @@ button.inactive {
     box-shadow var(--standard-reaction-time) var(--standard-cubic-bezier);
 }
 
-.checkbox-portfolio:checked + .works-filter {
+/* .checkbox-portfolio:checked + .works-filter {
+  background-color: var(--pointer);
+  color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+} */
+
+.works-filter.checked {
   background-color: var(--pointer);
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -1155,7 +1147,7 @@ button.inactive {
   color: var(--white-color);
   border-radius: 4px;
   border: 0 solid #ffffff;
-  padding: 10.5px 22px;
+  padding: 6px 22px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -1169,9 +1161,9 @@ button.inactive {
 .portfolio-item {
   margin-left: var(--standard-margin);
   margin-top: var(--standard-margin);
+  min-width: 370px;
   flex-basis: calc(100% / 3 - var(--standard-margin));
   border: 1px solid #eeeeee;
-  width: 370px;
 }
 
 .portfolio-item-link {
@@ -1182,20 +1174,15 @@ button.inactive {
     var(--standard-cubic-bezier);
 }
 
-.portfolio-item:first-child {
-  margin-left: 0;
-}
-
 /* чистим все левые элементы от левого падинга */
 
 .portfolio-item:nth-child(3n -2) {
   margin-left: 0;
 }
 
-.portfolio-item .container {
+.portfolio-card {
   flex-direction: column;
   padding: 20px 24px;
-  width: 370px;
 }
 
 .portfolio-innerheit a:visited {
