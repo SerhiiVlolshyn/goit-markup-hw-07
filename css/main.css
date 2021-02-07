@@ -1183,7 +1183,7 @@ nav .current-page::after {
   margin-left: 0;
 }
 
-.portfolio-item .container {
+.portfolio-item .portfolio-card {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
