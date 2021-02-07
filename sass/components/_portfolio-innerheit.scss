@@ -2,10 +2,12 @@
   padding-bottom: $vertical-distance;
 }
 
-.container .portfolio-innerheit {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
+.container {
+  .portfolio-innerheit {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
 }
 
 .portfolio-item {
@@ -61,6 +63,10 @@
   a {
     text-decoration: none;
   }
+}
+
+.portfolio-innerheit-div {
+  margin-bottom: $vertical-distance;
 }
 
 .portfolio-image {

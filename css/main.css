@@ -179,7 +179,7 @@ footer address {
 }
 
 .footer-social {
-  margin-left: 74px;
+  margin-left: 84px;
 }
 
 .footer-social-header {
@@ -1227,6 +1227,10 @@ nav .current-page::after {
 
 .portfolio-innerheit a {
   text-decoration: none;
+}
+
+.portfolio-innerheit-div {
+  margin-bottom: 94px;
 }
 
 .portfolio-image {
