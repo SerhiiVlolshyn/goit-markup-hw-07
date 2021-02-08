@@ -595,9 +595,10 @@ nav .current-page::after {
 }
 
 .team p {
-  margin-top: 10px;
   color: #757575;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
 }
 
 .team h3 {
@@ -681,13 +682,12 @@ nav .current-page::after {
   height: 20px;
 }
 
-.our-clients .section-title {
-  margin-top: 94px;
+.our-clients {
+  padding: 94px 0;
 }
 
 .client-list {
   margin-top: 50px;
-  margin-bottom: 94px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

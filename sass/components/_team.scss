@@ -20,9 +20,10 @@
     flex-direction: column;
   }
   p {
-    margin-top: 10px;
     color: $regular-text-color;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
   }
   h3 {
     margin: 0 auto;

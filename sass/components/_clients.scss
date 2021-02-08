@@ -1,10 +1,9 @@
-.our-clients .section-title {
-  margin-top: $vertical-distance;
+.our-clients {
+  padding: $vertical-distance 0;
 }
 
 .client-list {
   margin-top: $common-margin-top;
-  margin-bottom: $vertical-distance;
 
   display: flex;
   .clients-link {
