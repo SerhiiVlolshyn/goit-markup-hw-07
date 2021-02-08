@@ -4,7 +4,7 @@
     "sources": [
         "../sass/main.scss",
         "../sass/utils/_variables.scss",
-        "../sass/utils/_defaults.scss",
+        "../sass/base/_defaults.scss",
         "../sass/components/_footer.scss",
         "../sass/components/_header.scss",
         "../sass/components/_hero.scss",
